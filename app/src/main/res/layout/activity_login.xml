@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3CFE9"
+    android:layout_gravity="center">
+
+
+    <ImageView
+        android:id="@+id/img_login"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_for_login" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/background_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_login">
+
+        <TextView
+            android:id="@+id/txt_title_login"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:fontFamily="@font/cabin_bold"
+            android:gravity="center"
+            android:text="WELCOME TO COVID-19 NEWS "
+            android:textColor="#0E0E0E"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_desc_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Log in to continue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title_login" />
+
+        <EditText
+            android:id="@+id/et_email_login"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/button_border"
+            android:ems="10"
+            android:hint="   Email"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_desc_login" />
+
+        <EditText
+            android:id="@+id/et_pass_login"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_border"
+            android:ems="10"
+            android:hint="   Password"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_email_login" />
+
+        <TextView
+            android:id="@+id/txt_forgor_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:text="Forgot Password ?"
+            android:textColor="#837DFB"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_pass_login" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_round_left"
+            android:text="LOG IN"
+            android:textColor="#F8F8F8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_forgor_login"
+            app:layout_constraintVertical_bias="0.78" />
+
+        <TextView
+            android:id="@+id/txt_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_login"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_forgor_login"
+            app:layout_constraintVertical_bias="0.64" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:orientation="vertical"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent">-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_weight="1"-->
+<!--    android:gravity="center"-->
+<!--    android:background="#D3CFE9">-->
+
+<!--    <ImageView-->
+<!--        android:src="@drawable/img_for_login"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="300dp" />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@drawable/background_round"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="50dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt_title_login"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="50dp"-->
+<!--            android:fontFamily="@font/open_sans"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Stay at home, stay update with 100% valid information"-->
+<!--            android:textColor="#0E0E0E"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_for_signup"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="100dp"-->
+<!--            android:background="@drawable/button_round"-->
+<!--            android:text="SIGN UP"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textColor="#FBFBFB"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_for_login"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/button_border"-->
+<!--            android:text="LOGIN" />-->
+<!--    </LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+<!--</LinearLayout>-->
