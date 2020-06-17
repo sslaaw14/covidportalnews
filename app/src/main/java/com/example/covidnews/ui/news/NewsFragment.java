@@ -14,7 +14,8 @@ import android.view.ViewGroup;
 
 import com.example.covidnews.R;
 
-public class NewsFragment extends Fragment {
+public class
+NewsFragment extends Fragment {
 
     private NewsViewModel mViewModel;
 
