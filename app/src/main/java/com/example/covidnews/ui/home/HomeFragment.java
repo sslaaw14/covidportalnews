@@ -11,10 +11,12 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.covidnews.R;
 
 public class HomeFragment extends Fragment {
+    private RecyclerView recyclerViewNews;
 
     private HomeViewModel homeViewModel;
 
@@ -24,5 +26,7 @@ public class HomeFragment extends Fragment {
                 ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         return root;
+
+
     }
 }

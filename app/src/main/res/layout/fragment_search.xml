@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:autofillHints="Type here"
-    android:background="#D3CFE9"
+    android:background="@color/colorPrimary"
     tools:context=".ui.search.SearchFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
